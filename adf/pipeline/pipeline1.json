@@ -157,6 +157,33 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "netflix_pipeline",
+				"type": "DatabricksJob",
+				"dependsOn": [
+					{
+						"activity": "ForAllFiles",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"jobId": "995931510020924"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"parameters": {

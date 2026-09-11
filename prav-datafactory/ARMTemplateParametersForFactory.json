@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "prav-datafactory"
 		},
+		"ls_databricks_accessToken": {
+			"value": ""
+		},
 		"ls_datalake_accountKey": {
 			"value": ""
+		},
+		"ls_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0909-063200-pwnt20m3"
 		},
 		"ls_datalake_properties_typeProperties_url": {
 			"value": "https://pravdatalake.dfs.core.windows.net/"
